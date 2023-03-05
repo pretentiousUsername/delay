@@ -1,0 +1,11 @@
+name = "hermes"
+license = "BSD 2-clause license"
+licenselink = "https://github.com/pretentiousUsername/hermes/LICENSE"
+description = "A basic hugo theme for blogging"
+tags = ["blog", "clean", "minimal"]
+features = ["blog", "shortcode", "syntax highlighting", "math"]
+min_version = 0.30
+
+[author]
+  name = "Ian Mitchell"
+  homepage = "https://github.com/pretentiousUsername"

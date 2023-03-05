@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html lang="{{ .Site.LanguageCode }}">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+		<title> {{ .Title }} -=- {{ .Site.Title }}</title>
+		<!--<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
+		<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />-->
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
+		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
+		{{ partial "math.html" . }}
+	</head>
+
+	<body>
+		<nav>
+			<ul class="menu">
+				{{ range .Site.Menus.main }}
+				<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
+				{{ end }}
+			</ul>
+			<hr/>
+		</nav>

@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<div class="title">{{ .Title }}</div>
+
+<ul class="baseof">
+  {{ range .Data.Terms }}
+  <li>
+    <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a> ({{ .Count }})
+  </li>
+  {{ end }}
+</ul>
+
+{{ partial "footer.html" . }}
