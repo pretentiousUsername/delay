@@ -1,4 +1,4 @@
-# Hermes
+# Delay
 > A hugo complement for my [pandoc theme][quetzal].
 
 Hermes is based off of [XMin][xmin], an extremely simple Hugo theme. So far, 
