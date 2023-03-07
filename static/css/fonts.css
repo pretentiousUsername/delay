@@ -1,4 +1,4 @@
-/* Charter */
+/* StixTwo */
 
 @font-face {
   font-family: 'StixTwo';
@@ -106,23 +106,22 @@
 @font-face {
    font-family: 'JuliaMono';
    font-style: 'normal';
-   font-display: auto;
+   font-weight: 400;
+   src: url("../fonts/JuliaMono-RegularItalic.woff2") format("woff2");
+}
+
+
+@font-face {
+   font-family: 'JuliaMono';
+   font-style: 'italic';
    font-weight: 400;
    src: url("../fonts/JuliaMono-Regular.woff2") format("woff2");
 }
 
 @font-face {
    font-family: 'JuliaMono';
-   font-style: 'italic';
-   font-display: auto;
-   font-weight: 400;
-   src: url("../fonts/JuliaMono-Italic.woff2") format("woff2");
-}
-
-@font-face {
-   font-family: 'JuliaMono';
    font-style: 'normal';
-   font-display: auto;
+   /*font-display: auto;*/
    font-weight: 600;
    src: url("../fonts/JuliaMono-Bold.woff2") format("woff2");
 }
@@ -130,7 +129,7 @@
 @font-face {
    font-family: 'JuliaMono';
    font-style: 'normal';
-   font-display: auto;
+   /*font-display: auto;*/
    font-weight: 600;
    src: url("../fonts/JuliaMono-BoldItalic.woff2") format("woff2");
 }

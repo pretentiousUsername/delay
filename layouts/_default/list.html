@@ -1,3 +1,4 @@
+<!--list posts-->
 {{ partial "header.html" . }}
 
 {{if not .IsHome }}
@@ -6,15 +7,16 @@
 
 {{ .Content }}
 
+<div class="postList">
 <ul>
   {{ $pages := .Pages }}
   {{ if .IsHome }}{{ $pages = .Site.RegularPages }}{{ end }}
   {{ range (where $pages "Section" "!=" "") }}
   <li>
-    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+	  <span class="date"><b>{{ .Date.Format "2006-01-02" }}</b> – </span>
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
   {{ end }}
 </ul>
-
+</div>
 {{ partial "footer.html" . }}

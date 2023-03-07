@@ -1,23 +1,19 @@
-{{ define "body" }}
-    <body class="{{ if .Site.Params.backgroundImage }} background-image" style="background-image: url('{{ .Site.Params.backgroundImage }}');" {{ else }}"{{ end }}>
-{{ end }}
+{{ partial "headerHome.html" . }}
 
-{{ define "main" }}
-    <main aria-role="main">
-        <div>
-            {{ if .Site.Params.Portrait.Path }}
-               <img src="{{ .Site.Params.Portrait.Path }}" class="circle" alt="{{ .Site.Params.Portrait.Alt }}" style="max-width:{{ .Site.Params.Portrait.MaxWidth }}" />
-            {{ end }}
+<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/homeStyles.css">
 
-            <h1>{{ .Site.Title }}</h1>
+<div class="siteTitle">{{.Site.Title}}</div>
 
-            {{ partial "subtitle.html" . }}
+<nav>
+	<ul class="menuHome">
+		{{ range .Site.Menus.main }}
+			<li><a href="{{ .URL | relURL }}">{{.Name}}</a></li>
+		{{ end }}
+		</ul>
+</nav>
 
-            {{- with .Site.Params.social }}
-                <div>
-                    {{ partial "social-icons.html" . }}
-                </div>
-            {{- end }}
-        </div>
-    </main>
-{{ end }}
+<main>
+	{{ .Content }}
+</main>
+
+{{ partial "footer.html" }}

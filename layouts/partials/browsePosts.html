@@ -1,0 +1,7 @@
+<div class="browsePosts">
+{{ with .NextInSection }}
+<div class="nextPost">><a href="{{ .Permalink }}">Next post</a></div>
+	{{ end }}
+<div class="previousPost"><a href="{{ .Permalink }}">Previous post</a></div>
+
+</div>
