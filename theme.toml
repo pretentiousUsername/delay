@@ -1,6 +1,6 @@
-name = "hermes"
-license = "BSD 2-clause license"
-licenselink = "https://github.com/pretentiousUsername/hermes/LICENSE"
+name = "delay"
+license = "BSD 3-clause license"
+licenselink = "https://github.com/pretentiousUsername/delay/LICENSE"
 description = "A basic hugo theme for blogging"
 tags = ["blog", "clean", "minimal"]
 features = ["blog", "shortcode", "syntax highlighting", "math"]
