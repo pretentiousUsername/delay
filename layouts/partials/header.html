@@ -4,7 +4,12 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=devide-width, initial-scale=1.0">
-		<title>{{ .Title }} – {{ .Site.Title }}</title>
+		{{ if .Title }}
+			<title>{{ .Title }} – {{ .Site.Title }}</title>
+		{{ else }}
+			<title> {{ .Site.Title }} </title>
+		{{ end }}
+
 		<!--<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
 		<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />-->
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">

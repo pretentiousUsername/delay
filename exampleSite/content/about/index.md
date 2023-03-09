@@ -1,5 +1,6 @@
 ---
-title: "About this theme (a manifesto of sorts)"
+title: "About this theme"
+subtitle: "a manifesto of sorts"
 author: "Ian Mitchell"
 date: "2023-03-08"
 ---
@@ -7,13 +8,11 @@ date: "2023-03-08"
 Typesetting is art, both in the sense that is beautiful, and that it is 
 useful. Beauty is of course in the eye of the beholder---it is derived
 from many things; while *The Fountain* is a urinal, and not a Baroque
-painting, its use in demonstrating the hypocrisy in the wider avant-garde
-art world was beautiful in and of itself. In essence, the beauty derived
-from the function of the object---that is much of art in and of itself.
-What is aesthetically beautiful---what we find easy on the eyes---is
-culturally defined.
+painting, its use in demonstrating the art world's hypocrisy was beautiful in 
+and of itself. In essence, *The Fountain*'s beauty derived from its
+function---in essence, *The Fountain* is a masterclass in modern design.
 
-For most people, that works perfectly, but typesetters are not so lucky. 
+For most people, that works perfectly, but typesetters are not so lucky.
 Typography's beauty doesn't derive from process, message, or raw 
 aesthetics---it is instead from how easy a document can be read, and 
 whether or not the style matches the medium and purpose. If I were to 
@@ -23,13 +22,11 @@ neighborhood, people would find it ridiculous; if I were to print that in
 Garamond, and place it in a book a thousand times *a-la The Shining*, 
 people would think I'm a serial killer. If I put it on a poster, in bright 
 Frutiger or Helveitca, give it some contrasting colors, and hang it up in 
-some bar in a gentrified part of New York or Philadelphia---and maybe throw
-in a picture of an possum---people would call it graphic design---if I'm 
-lucky, they'd call it art.
+some bar in a gentrified part of New York or Philadelphia people would call it 
+graphic design---if I'm lucky, they'd call it art.
 
-{{< figure src="img/theDude" alt="The Dude" position="center" style="border-radius: 8px;" caption="Behold---the dude." >}}
+{{< figure src="img/theDude.svg" alt="The Dude" position="center" style="border-radius: 8px;" caption="Behold---the dude." >}}
 
-![Behold: the dude.](img/theDude.svg)
 
 To make good typesetting, you need to know your purpose. This template is
 designed to do two things: make your information look decent, and make it 
@@ -37,18 +34,39 @@ readable. If you're not writing "***DO YOU'rE BESt***" a thousand times,
 you're on route to making something good. Not only is this designed to
 make whatever you're writing look good, it's also trying to make it as
 timeless as possible. I avoided design trends---I avoided those puffy
-serif fonts, such as [New Spirit][ns]. This is a pandoc template for
-typesetting documents that matter, not advertising that will wind up
-in the dustbin of history, relegated to simply being a marker of the times.
+serif fonts, such as [New Spirit][ns]. This is a hugo template for
+websites that matter, not advertising that will wind up in the dustbin of 
+history.[^ads]
 
-This template was created for a simple reason: I'm sick and tired of
-Computer Modern and Times (New Roman). I see a lot of good scientists
-typesetting their documents in Computer Modern---and if they're using Word,
-Times New Roman---and I have to just ask *why*? The backbone of modern
-science---the [arXiv](https://arxiv.org)---puts all of its documents in
-plain LaTeX. (Either that, or they're horribly typeset in MS
-Word.) That's fine, but I think it can be done better. If you're going to be 
-making non-choices, then you might as well make them look nice and print well.
+
+![Brand, online pharmacy and menstrual underwear company. We care enough
+about you to use desaturated colors and lowercase letters. \*we might
+put PFAS in your underwear.](img/brand.webp)
+
+
+This template was created with two goals in mind: I wanted to make something
+with as little code as possible---one that I betrayed given how much CSS and
+shortcodes I used---and I wanted to make something that was a compliment to
+my pandoc template, [*Quetzalcoatl*][quet]. Delay is designed to be as nice
+as possible to read, and as simple to use as possible---it is human scale,
+and human oriented.
+
+There is still quite a bit of work to be done, of course. I still need to:
++ Add tags/categories,
++ Clean up some css,
++ Test on various platforms,
++ Get this on the hugo showcase website.
+
+If you use *delay* for your website, feel free to let me know somehow---no
+pressure, but it would definitely be cool.
+
 
 [ns]: https://fonts.adobe.com/fonts/new-spirit
 
+[quet]: https://github.com/pretentiousUsername/quetzalcoatl
+
+
+[^ads]: I've always found my taste runs, for the most part, contrary to 
+advertisement---if I see some font in a commercial, or on the packaging for 
+some personal wellness product, I avoid it like the plague. Maybe I'm a weird
+contrarian, or perhaps I'm an *avant-garde* god. Who can say, really?

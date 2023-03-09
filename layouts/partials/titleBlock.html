@@ -1,0 +1,5 @@
+{{ if .Title }}
+	<title>{{ .Title }} – {{ .Site.Title }}</title>
+{{ else }}
+	<title> {{ .Site.Title }} </title>
+{{ end }}

@@ -30,11 +30,10 @@ What about some *even more* fun stuff with Green's functions?---possibly from
 Jauho?
 $$
 G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime )
-G^>(x, t; x^\prime, t^\prime )
-+ \theta(t^\prime - t) G^<(x, t; x^\prime, t^\prime ) ~ .
+G^>(x, t; x^\prime, t^\prime ) +
+\theta(t^\prime - t) G^<(x, t; x^\prime, t^\prime ) ~ . $$
 $$
-$$
-A(k, \omega) = i \lbrack G^>(k, \omega) - G^<(k, \omega) \rbrack
+A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .
 $$
 Maybe there's an equation we can use from Freerick's *Transport in Multilayer
 Nanostructures*?
@@ -42,8 +41,8 @@ $$
 G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
 d\omega^\prime ~ . $$
 $$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau) \langle \lbrack
-\hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack c_i(0) \rangle
-+ \langle c_j (0) \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle
+\hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack c_i(0) \rangle +
+\langle c_j (0) \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle ~.
 $$
 
 ## The *LaTeX Companion* gauntlet
