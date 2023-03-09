@@ -1,0 +1,9 @@
+/* tertiary css styles */
+
+p.noIndent {
+  font-family: "StixTwo", Times New Roman, serif;
+  text-indent: 0;
+  font-size: 22px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}

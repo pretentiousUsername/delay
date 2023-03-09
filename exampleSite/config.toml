@@ -1,0 +1,37 @@
+baseURL = "/"
+theme = "delay"
+paginate = 5
+languageCode = "en-us"
+
+themesdir = "../.."
+
+[author]
+    homepage = "asdf"
+
+[params]
+    contentTypeName = "posts"
+    defaultTheme = "dark"
+    showMenuItems = 2
+    math = true
+
+[languages]
+    [languages.en]
+        title = "Delay – a cool Hugo theme"
+	newPosts = "Newer posts"
+	olderPosts = "Older posts"
+	dateFormatSingle = "2006-01-02"
+	dateFormatList = "2006-01-02"
+
+    [languages.en.menu]
+        [[languages.en.menu.main]]
+	    identifier = "1"
+	    name = "posts"
+	    url = "/posts"
+	[[languages.en.menu.main]]
+	    identifier = "2"
+	    name = "about"
+	    url = "/about"
+	[[languages.en.menu.main]]
+	    identifier = "3"
+	    name = "home"
+	    url = "/"

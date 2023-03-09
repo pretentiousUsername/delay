@@ -1,3 +1,6 @@
 [submodule "exampleSite"]
 	path = exampleSite
 	url = https://github.com/gohugoio/hugoBasicExample
+[submodule "static/js/KaTeX"]
+	path = static/js/KaTeX
+	url = https://github.com/KaTeX/KaTeX

@@ -1,16 +1,16 @@
-{{ partial "headerHome.html" . }}
+{{ partial "header.html" . }}
 
 <link rel="stylesheet" href="{{ .Site.BaseURL }}/css/homeStyles.css">
 
 <div class="siteTitle">{{.Site.Title}}</div>
 
-<nav>
+<!--<nav>
 	<ul class="menuHome">
 		{{ range .Site.Menus.main }}
 			<li><a href="{{ .URL | relURL }}">{{.Name}}</a></li>
 		{{ end }}
 		</ul>
-</nav>
+</nav>-->
 
 <main>
 	{{ .Content }}
