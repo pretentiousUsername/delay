@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en-us">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+		
+			<title>More math typesetting – Delay – a cool Hugo theme</title>
+		
+
+		
+		<link rel="stylesheet" href="//css/fonts.css">
+		<link rel="stylesheet" href="//css/style.css">
+		<link rel="stylesheet" href="//css/tertStyles.css">
+		
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+        onload="renderMathInElement(document.body);"></script>
+
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "$", right: "$", display: false}
+            ]
+        });
+    });
+</script>
+
+
+	</head>
+
+	<body>
+		<nav>
+			<ul class="menu">
+				
+				<li><a href="/about">about</a></li>
+				
+				<li><a href="/">home</a></li>
+				
+				<li><a href="/posts">posts</a></li>
+				
+			</ul>
+			<hr/>
+		</nav>
+
+
+<div class="article-meta">
+	<div class="title">More math typesetting</div>
+	
+	<div class="author">Ian Mitchell</div> 
+	 <div class="date">2023-03-09</div> 
+</div>
+
+<main>
+	<p>Here&rsquo;s some math typesetting stuff. For starters I&rsquo;ll just write down the
+Linblad equation, a nice bit of physics for open quantum systems,</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>$$ \frac{\partial \rho(t)}{\partial t} =
+\sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger
+-\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen
+-\lbrack H, \rho(t) \rbrack ~ .$$
+Does $v = \nu$? How do $g$, $u$, $v$ and <em>v</em>, $w$, and $z$ look? This is
+slightly unrelated to the Linblad equation, since it&rsquo;s classical, but I&rsquo;m the
+God of this document, so I&rsquo;ll also write down the Boltzmann equation,
+$$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}}
+\cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f}
+{\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t}
+\right)_{\text{coll}} ~ . $$</p>
+<p>What about some <em>even more</em> fun stuff with Green&rsquo;s functions?&mdash;possibly from
+<em>Quantum Kinetics in Transport and Optics of Semiconductors</em> by Haug and
+Jauho?
+$$
+G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime )
+G^&gt;(x, t; x^\prime, t^\prime ) +
+\theta(t^\prime - t) G^&lt;(x, t; x^\prime, t^\prime ) ~ . $$
+$$
+A(k, \omega) = i \lbrack G^&gt; (k, \omega) - G^&lt; (k, \omega) \rbrack ~ .
+$$
+Maybe there&rsquo;s an equation we can use from Freerick&rsquo;s <em>Transport in Multilayer
+Nanostructures</em>?
+$$
+G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
+d\omega^\prime ~ . $$
+$$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau) \langle \lbrack
+\hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack c_i(0) \rangle +
+\langle c_j (0) \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle ~.
+$$</p>
+<h2 id="the-latex-companion-gauntlet">The <em>LaTeX Companion</em> gauntlet</h2>
+<p>A problematic example:
+$$ t[u_1, \dots, u_n] = \sum_{k=1}^{n} \binom{n-1}{k-1} (1 - t)^{n - k}
+t^{k - 1} u_k $$</p>
+<p>An example showing a trigonometric function:
+$$ \sin \frac{\alpha}{2} = \pm \sqrt{ \frac{1 - \cos \alpha}{2} } $$</p>
+<p>Let $f$ be analytic in the region $G$ except for the isolated
+singularities $a_1,a_2,\dots,a_m$. If $\gamma$ is a closed
+rectifiable curve in $G$ which does not pass through any of the
+points $a_k$ and if $\gamma\approx 0$ in $G$, then
+$$
+\frac{1}{2\pi i} \int_\gamma f\Bigl(x^{\mathbf{N}\in\mathbb{C}^{N\times 10}}\Bigr)
+= \sum_{k=1}^m n(\gamma;a_k)\oint(f;a_k) ~.
+$$</p>
+
+</main>
+
+
+
+</body>
+
+</html>
+

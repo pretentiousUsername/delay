@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>physics on Delay – a cool Hugo theme</title>
+    <link>/tags/physics/</link>
+    <description>Recent content in physics on Delay – a cool Hugo theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/tags/physics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More math typesetting</title>
+      <link>/posts/moremathtypesetting/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moremathtypesetting/</guid>
+      <description>Here&amp;rsquo;s some math typesetting stuff. For starters I&amp;rsquo;ll just write down the Linblad equation, a nice bit of physics for open quantum systems,
+$$ \frac{\partial \rho(t)}{\partial t} = \sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen -\lbrack H, \rho(t) \rbrack ~ .$$ Does $v = \nu$? How do $g$, $u$, $v$ and v, $w$, and $z$ look? This is slightly unrelated to the Linblad equation, since it&amp;rsquo;s classical, but I&amp;rsquo;m the God of this document, so I&amp;rsquo;ll also write down the Boltzmann equation, $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} ~ .</description>
+    </item>
+    
+  </channel>
+</rss>

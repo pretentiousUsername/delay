@@ -1,0 +1,8 @@
+div.postList li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+
+div.postList ul, ol {
+  padding-left: 0;
+}

@@ -6,7 +6,26 @@
     <description>Recent content on Delay – a cool Hugo theme</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>More math typesetting</title>
+      <link>/posts/moremathtypesetting/</link>
+      <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/moremathtypesetting/</guid>
+      <description>Here&amp;rsquo;s some math typesetting stuff. For starters I&amp;rsquo;ll just write down the Linblad equation, a nice bit of physics for open quantum systems,
+$$ \frac{\partial \rho(t)}{\partial t} = \sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen -\lbrack H, \rho(t) \rbrack ~ .$$ Does $v = \nu$? How do $g$, $u$, $v$ and v, $w$, and $z$ look? This is slightly unrelated to the Linblad equation, since it&amp;rsquo;s classical, but I&amp;rsquo;m the God of this document, so I&amp;rsquo;ll also write down the Boltzmann equation, $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} ~ .</description>
+    </item>
+    
+    <item>
+      <title>About this theme</title>
+      <link>/about/</link>
+      <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/about/</guid>
+      <description>Typesetting is art, both in the sense that is beautiful, and that it is useful. Beauty is of course in the eye of the beholder&amp;mdash;it is derived from many things; while The Fountain is a urinal, and not a Baroque painting, its use in demonstrating the art world&amp;rsquo;s hypocrisy was beautiful in and of itself. In essence, The Fountain&amp;rsquo;s beauty derived from its function&amp;mdash;in essence, The Fountain is a masterclass in modern design.</description>
+    </item>
+    
     <item>
       <title>Markdown Syntax Guide</title>
       <link>/posts/markdownsyntax/</link>

@@ -2,6 +2,7 @@
 title: More math typesetting
 date: 2023-03-09
 author: Ian Mitchell
+tags: ["math", "physics", "typesetting"]
 ---
 
 Here's some math typesetting stuff. For starters I'll just write down the

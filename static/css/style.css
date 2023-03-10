@@ -233,12 +233,3 @@ div.error404 {
   margin-bottom: 0px;
   margin-top: 0px;
 }
-
-div.postList li {
-  list-style-type: none;
-  margin-bottom: 5px;
-}
-
-div.postList ul, ol {
-  padding-left: 0;
-}
