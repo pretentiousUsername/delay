@@ -14,13 +14,13 @@
 		<link rel="stylesheet" href="//localhost:1313//css/tertStyles.css">
 		
 <script type="text/javascript"
-  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js">
 </script>
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
   tex2jax: {
-    inlineMath: [['$','$'], ['\\(','\\)']],
+    inlineMath: [['$','$']],//, ['\\(','\\)']],
     displayMath: [['$$','$$'], ['\[','\]']],
     processEscapes: true,
     processEnvironments: true,
@@ -69,12 +69,10 @@ MathJax.Hub.Config({
 
 <main>
 	<p>Here&rsquo;s some math typesetting stuff. For starters I&rsquo;ll just write down the
-Linblad equation, a nice bit of physics for open quantum systems,</p>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<p>$$ \frac{\partial \rho(t)}{\partial t} =
-\sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger
--\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen
+Linblad equation, a nice bit of physics for open quantum systems,
+$$ \frac{\partial \rho(t)}{\partial t} =
+\sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger
+-\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
 -\lbrack H, \rho(t) \rbrack ~ .$$
 Does $v = \nu$? How do $g$, $u$, $v$ and <em>v</em>, $w$, and $z$ look? This is
 slightly unrelated to the Linblad equation, since it&rsquo;s classical, but I&rsquo;m the
