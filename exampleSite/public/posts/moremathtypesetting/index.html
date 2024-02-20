@@ -13,23 +13,25 @@
 		<link rel="stylesheet" href="//localhost:1313//css/style.css">
 		<link rel="stylesheet" href="//localhost:1313//css/tertStyles.css">
 		
-<script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.min.js">
-</script>
 
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']],//, ['\\(','\\)']],
-    displayMath: [['$$','$$'], ['\[','\]']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});
+<script type="text/javascript">
+  MathJax = {
+    tex: {
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+    },
+  };
 </script>
+<script
+    async
+    id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"
+    integrity="sha384-+BSz3oj3ILMYvOBr16U9i0H4RZRmGyQQ+1q9eqr8T3skmAFrJk8GmgwgqlCZdNSo"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    type="text/javascript"></script>
+
+
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Queue(function() {
@@ -73,8 +75,9 @@ Linblad equation, a nice bit of physics for open quantum systems,
 $$ \frac{\partial \rho(t)}{\partial t} =
 \sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger
 -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
--\lbrack H, \rho(t) \rbrack ~ .$$
-Does $v = \nu$? How do $g$, $u$, $v$ and <em>v</em>, $w$, and $z$ look? This is
+-\lbrack H, \rho(t) \rbrack ~ .$$</p>
+<p>Hello $x$.</p>
+<p>Does $v = \nu$? How do $g$, $u$, $v$ and <em>v</em>, $w$, and $z$ look? This is
 slightly unrelated to the Linblad equation, since it&rsquo;s classical, but I&rsquo;m the
 God of this document, so I&rsquo;ll also write down the Boltzmann equation,
 $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}}

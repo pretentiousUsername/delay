@@ -11,6 +11,9 @@ $$ \frac{\partial \rho(t)}{\partial t} =
 \sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger
 -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
 -\lbrack H, \rho(t) \rbrack ~ .$$
+
+Hello $x$.
+
 Does $v = \nu$? How do $g$, $u$, $v$ and *v*, $w$, and $z$ look? This is
 slightly unrelated to the Linblad equation, since it's classical, but I'm the
 God of this document, so I'll also write down the Boltzmann equation,
