@@ -16,7 +16,7 @@ themesdir = "../.."
 
 [languages]
     [languages.en]
-        title = "Delay – a cool Hugo theme"
+    title = "Delay – a cool Hugo theme"
 	newPosts = "Newer posts"
 	olderPosts = "Older posts"
 	dateFormatSingle = "2006-01-02"
