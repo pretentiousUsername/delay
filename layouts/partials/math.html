@@ -1,25 +1,66 @@
-<!--Taken from https://katex.org/docs/browser.html-->
+<!-- Get mathjax -->
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css" integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
-
-<!-- The loading of KaTeX is deferred to speed up page rendering -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js" integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
-
-<!-- To automatically render math in text elements, include the auto-render extension: -->
-<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
-
-
-<!-- from https://mertbakir.gitlab.io/hugo/math-typesetting-in-hugo/ -->
-
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        renderMathInElement(document.body, {
-            delimiters: [
-                {left: "$$", right: "$$", display: true},
-                {left: "$", right: "$", display: false}
-            ]
-        });
-    });
+<script type="text/javascript">
+  MathJax = {
+    tex: {
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+    },
+  };
 </script>
 
+<script
+    async
+    id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"
+    integrity="sha384-+BSz3oj3ILMYvOBr16U9i0H4RZRmGyQQ+1q9eqr8T3skmAFrJk8GmgwgqlCZdNSo"
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    type="text/javascript"></script>
+
+<!--
+<script
+    async
+    id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0/chtml.min.js"
+    integrity=""
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    type="text/javascript"></script>
+-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font/chtml.js" charset="UTF-8"></script>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font/chtml.js"></script>-->
+
+<!--<script
+    async
+    id="MathJax-script"
+    src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.4/chtml.js"
+    integrity="sha256-xbE/6nGCLTkHOvQV+1l9BR3gERB+jusFb4Y3sEeWwyE="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    type="text/javascript"></script>-->
+
+<!--<script src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.4/chtml.js" integrity="sha256-xbE/6nGCLTkHOvQV+1l9BR3gERB+jusFb4Y3sEeWwyE=" crossorigin="anonymous"></script>-->
+
+
+<!--
+THIS FIXES THE INLINE MATH BULLSHIT!
+
+Thank you, Misha Brukman!
+
+https://misha.brukman.net/blog/2022/04/writing-math-with-hugo/
+-->
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
