@@ -2,65 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Delay – a cool Hugo theme</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Delay – a cool Hugo theme</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 09 Mar 2023 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>More math typesetting</title>
-      <link>/posts/moremathtypesetting/</link>
+      <link>//localhost:1313/posts/moremathtypesetting/</link>
       <pubDate>Thu, 09 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/moremathtypesetting/</guid>
-      <description>Here&amp;rsquo;s some math typesetting stuff. For starters I&amp;rsquo;ll just write down the Linblad equation, a nice bit of physics for open quantum systems,
-$$ \frac{\partial \rho(t)}{\partial t} = \sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen -\lbrack H, \rho(t) \rbrack ~ .$$ Does $v = \nu$? How do $g$, $u$, $v$ and v, $w$, and $z$ look? This is slightly unrelated to the Linblad equation, since it&amp;rsquo;s classical, but I&amp;rsquo;m the God of this document, so I&amp;rsquo;ll also write down the Boltzmann equation, $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} ~ .</description>
+      <guid>//localhost:1313/posts/moremathtypesetting/</guid>
+      <description>Here&amp;rsquo;s some math typesetting stuff. For starters I&amp;rsquo;ll just write down the Linblad equation, a nice bit of physics for open quantum systems,&#xA;$$ \frac{\partial \rho(t)}{\partial t} = \sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace \right) -\frac{i}{\hbar} \left[ H, \rho(t) \right] , .$$ Does $v = \nu$? How do $g$, $u$, $v$ and v, $w$, and $z$ look? This is slightly unrelated to the Linblad equation, since it&amp;rsquo;s classical, but I&amp;rsquo;m the God of this document, so I&amp;rsquo;ll also write down the Boltzmann equation, $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} ~ .</description>
     </item>
-    
     <item>
       <title>About this theme</title>
-      <link>/about/</link>
+      <link>//localhost:1313/about/</link>
       <pubDate>Wed, 08 Mar 2023 00:00:00 +0000</pubDate>
-      
-      <guid>/about/</guid>
+      <guid>//localhost:1313/about/</guid>
       <description>Typesetting is art, both in the sense that is beautiful, and that it is useful. Beauty is of course in the eye of the beholder&amp;mdash;it is derived from many things; while The Fountain is a urinal, and not a Baroque painting, its use in demonstrating the art world&amp;rsquo;s hypocrisy was beautiful in and of itself. In essence, The Fountain&amp;rsquo;s beauty derived from its function&amp;mdash;in essence, The Fountain is a masterclass in modern design.</description>
     </item>
-    
     <item>
       <title>Markdown Syntax Guide</title>
-      <link>/posts/markdownsyntax/</link>
+      <link>//localhost:1313/posts/markdownsyntax/</link>
       <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/markdownsyntax/</guid>
+      <guid>//localhost:1313/posts/markdownsyntax/</guid>
       <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rich Content</title>
-      <link>/posts/richtext/</link>
+      <link>//localhost:1313/posts/richtext/</link>
       <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/richtext/</guid>
+      <guid>//localhost:1313/posts/richtext/</guid>
       <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugos-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Placeholder Text</title>
-      <link>/posts/placeholdertext/</link>
+      <link>//localhost:1313/posts/placeholdertext/</link>
       <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/placeholdertext/</guid>
+      <guid>//localhost:1313/posts/placeholdertext/</guid>
       <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de pectora summo.&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Math Typesetting</title>
-      <link>/posts/mathtypesetting/</link>
+      <link>//localhost:1313/posts/mathtypesetting/</link>
       <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/posts/mathtypesetting/</guid>
+      <guid>//localhost:1313/posts/mathtypesetting/</guid>
       <description>&lt;p&gt;Mathematical notation in a Hugo project can be enabled by using third party JavaScript libraries.&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

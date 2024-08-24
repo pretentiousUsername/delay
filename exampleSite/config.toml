@@ -8,19 +8,25 @@ themesdir = "../.."
 [author]
     homepage = "asdf"
 
-[params]
-    contentTypeName = "posts"
-    defaultTheme = "dark"
-    showMenuItems = 2
-    math = true
+#[params]
+#    contentTypeName = "posts"
+#    defaultTheme = "dark"
+#    showMenuItems = 2
+#    math = true
 
 [languages]
     [languages.en]
-        title = "Delay – a cool Hugo theme"
-	newPosts = "Newer posts"
-	olderPosts = "Older posts"
-	dateFormatSingle = "2006-01-02"
-	dateFormatList = "2006-01-02"
+    title = "Delay – a cool Hugo theme"
+    [languages.en.params]
+        contentTypeName = "posts"
+        defaultTheme = "dark"
+        showMenuItems = 2
+        math = true
+	    newPosts = "Newer posts"
+	    olderPosts = "Older posts"
+	    dateFormatSingle = "2006-01-02"
+	    dateFormatList = "2006-01-02"
+
 
     [languages.en.menu]
         [[languages.en.menu.main]]

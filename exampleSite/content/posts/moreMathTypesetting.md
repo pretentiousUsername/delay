@@ -7,16 +7,14 @@ tags: ["math", "physics", "typesetting"]
 
 Here's some math typesetting stuff. For starters I'll just write down the
 Linblad equation, a nice bit of physics for open quantum systems,
-<!--$$
-\frac{\partial \rho(r, t)}{\partial t} = 
+<!--$$ \frac{\partial \rho(r, t)}{\partial t} = 
 \sum_j \gamma_j \lparen L_j \rho(r, t) L_j^\dagger
 - \frac{1}{2} \lbrace L_j L_j^\dagger, \rho(r, t) \rbrace \rparen
 - i \lbrack H, \rho(r, t) \rbrack \,. $$-->
 
 $$ \frac{\partial \rho(t)}{\partial t} =
-\sum_j \gamma_j \lparen L_j \rho(t) L_j^\dagger
--\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\rparen
--\lbrack H, \rho(t) \rbrack ~ .$$
+\sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace \right)
+-\frac{i}{\hbar} \left[ H, \rho(t) \right] \, .$$
 Does $v = \nu$? How do $g$, $u$, $v$ and *v*, $w$, and $z$ look? This is
 slightly unrelated to the Linblad equation, since it's classical, but I'm the
 God of this document, so I'll also write down the Boltzmann equation,
