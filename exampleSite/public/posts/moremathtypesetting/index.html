@@ -16,12 +16,23 @@
 
 <script type="text/javascript">
   MathJax = {
+      loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
     tex: {
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
+        packages: {'[+]': {'textmacros'}},
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
     },
   };
 </script>
+
+
+
+
+
+
+
+
+
 <script
     async
     id="MathJax-script"
@@ -29,7 +40,8 @@
     integrity="sha384-+BSz3oj3ILMYvOBr16U9i0H4RZRmGyQQ+1q9eqr8T3skmAFrJk8GmgwgqlCZdNSo"
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
-    type="text/javascript"></script>
+    type="text/javascript">
+</script>
 
 
 
