@@ -2,12 +2,21 @@
 
 <script type="text/javascript">
   MathJax = {
+      loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
     tex: {
-      displayMath: [['$$', '$$'], ['\\[', '\\]']],
-      inlineMath: [['$', '$'], ['\\(', '\\)']],
+        packages: {'[+]': {'textmacros'}},
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
     },
   };
 </script>
+
+<!--<script type="text/javascript">
+    window.MathJax = {
+        loader: {load: ['[tex]/textmacros']},
+        tex: {packages: {'[+]': ['textmacros']}}
+};
+</script>-->
 
 
 <!--<script src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font/chtml.js"
