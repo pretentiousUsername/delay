@@ -8,56 +8,40 @@
 			<title>More math typesetting – Delay – a cool Hugo theme</title>
 		
 
-		
 		<link rel="stylesheet" href="//localhost:1313//css/fonts.css">
 		<link rel="stylesheet" href="//localhost:1313//css/style.css">
 		<link rel="stylesheet" href="//localhost:1313//css/tertStyles.css">
-		
+
+        
+          
+
 <script type="text/javascript">
   MathJax = {
       loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
     tex: {
         packages: {'[+]': {'textmacros'}},
         displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        inlineMath: [['$', '$'], ['\(', '\)']],
     },
   };
 </script>
 
 
-
-
-
-
-
-
-    
-
-
-<script async src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.7/tex-mml-chtml-mathjax-stix2.js" integrity="sha256-BJoJ1Oj7MVe0W0bQQ2KjLJ42xUp0CnzCGPskF1PKQ5o=" crossorigin="anonymous" charset="UTF-8"></script>
-
-
-
-
-
-
-
-
-
-
-
-<script type="text/x-mathjax-config">
-  MathJax.Hub.Queue(function() {
-    // Fix <code> tags after MathJax finishes running. This is a
-    // hack to overcome a shortcoming of Markdown. Discussion at
-    // https://github.com/mojombo/jekyll/issues/199
-    var all = MathJax.Hub.getAllJax(), i;
-    for(i = 0; i &lt; all.length; i += 1) {
-        all[i].SourceElement().parentNode.className += ' has-jax';
-    }
-});
+<script async
+    src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.7/tex-mml-chtml-mathjax-stix2.js"
+    integrity="sha256-BJoJ1Oj7MVe0W0bQQ2KjLJ42xUp0CnzCGPskF1PKQ5o="
+    crossorigin="anonymous"
+    charset="UTF-8">
 </script>
 
+
+
+
+
+
+
+        
+        
 	</head>
 
 	<body>
@@ -85,52 +69,51 @@
 <main>
 	<p>Here&rsquo;s some math typesetting stuff. For starters I&rsquo;ll just write down the
 Linblad equation, a nice bit of physics for open quantum systems,
+</p>
 $$ \frac{\partial \rho(t)}{\partial t} =
-\sum_j \gamma_j \left( L_j \rho(t) L_j^\dagger
+\sum_j \gamma_j \left( L_j \, \rho(t) \, L_j^\dagger
 -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
--\lbrack H, \rho(t) \rbrack ~ .$$</p>
-<p>Hello $x$.</p>
-<p>Does $v = \nu$? How do $g$, $u$, $v$ and <em>v</em>, $w$, and $z$ look? This is
-slightly unrelated to the Linblad equation, since it&rsquo;s classical, but I&rsquo;m the
+-\lbrack H, \rho(t) \rbrack ~ .$$<p>Hello \(x\).</p>
+<p>Does \(v = \nu a\)? How do \(g\), \(u\), \(v\) and <em>v</em>, \(w\), and \(z\) look? This is
+slightly unrelated to the Lindblad equation, since it&rsquo;s classical, but I&rsquo;m the
 God of this document, so I&rsquo;ll also write down the Boltzmann equation,
+</p>
 $$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}}
 \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f}
-{\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t}
-\right)_{\text{coll}} ~ . $$</p>
-<p>What about some <em>even more</em> fun stuff with Green&rsquo;s functions?&mdash;possibly from
+{\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} 
+\right)_{\text{coll}} ~ . $$<p>What about some <em>even more</em> fun stuff with Green&rsquo;s functions?&mdash;possibly from
 <em>Quantum Kinetics in Transport and Optics of Semiconductors</em> by Haug and
 Jauho?
+</p>
 $$
-G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime )
-G^&gt;(x, t; x^\prime, t^\prime ) +
-\theta(t^\prime - t) G^&lt;(x, t; x^\prime, t^\prime ) ~ . $$
-$$
-A(k, \omega) = i \lbrack G^&gt; (k, \omega) - G^&lt; (k, \omega) \rbrack ~ .
-$$
+G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime ) \,
+G^>(x, t; x^\prime, t^\prime ) +
+\theta(t^\prime - t) \, G^<(x, t; x^\prime, t^\prime ) ~ . $$$$
+A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .
+$$<p>
 Maybe there&rsquo;s an equation we can use from Freerick&rsquo;s <em>Transport in Multilayer
 Nanostructures</em>?
+</p>
 $$
 G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
-d\omega^\prime ~ . $$
-$$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau) \langle \lbrack
-\hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack c_i(0) \rangle +
-\langle c_j (0) \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle ~.
-$$</p>
-<h2 id="the-latex-companion-gauntlet">The <em>LaTeX Companion</em> gauntlet</h2>
+d\omega^\prime ~ . $$$$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau)\, \langle \lbrack
+\hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack \, c_i(0) \rangle +
+\langle c_j(0) \, \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle ~.
+$$<h2 id="the-latex-companion-gauntlet">The <em>LaTeX Companion</em> gauntlet</h2>
 <p>A problematic example:
+</p>
 $$ t[u_1, \dots, u_n] = \sum_{k=1}^{n} \binom{n-1}{k-1} (1 - t)^{n - k}
-t^{k - 1} u_k $$</p>
-<p>An example showing a trigonometric function:
-$$ \sin \frac{\alpha}{2} = \pm \sqrt{ \frac{1 - \cos \alpha}{2} } $$</p>
-<p>Let $f$ be analytic in the region $G$ except for the isolated
-singularities $a_1,a_2,\dots,a_m$. If $\gamma$ is a closed
-rectifiable curve in $G$ which does not pass through any of the
-points $a_k$ and if $\gamma\approx 0$ in $G$, then
+\, t^{k - 1} \, u_k $$<p>An example showing a trigonometric function:
+</p>
+$$ \sin \frac{\alpha}{2} = \pm \sqrt{ \frac{1 - \cos \alpha}{2} } $$<p>Let \(f\) be analytic in the region \(G\) except for the isolated
+singularities \(a_1,a_2,\dots,a_m\). If \(\gamma\) is a closed
+rectifiable curve in \(G\) which does not pass through any of the
+points \(a_k\) and if \(\gamma\approx 0\) in \(G\), then
+</p>
 $$
-\frac{1}{2\pi i} \int_\gamma f\Bigl(x^{\mathbf{N}\in\mathbb{C}^{N\times 10}}\Bigr)
-= \sum_{k=1}^m n(\gamma;a_k)\oint(f;a_k) ~.
-$$</p>
-
+    \frac{1}{2\pi i} \int_\gamma f\Bigl(x^{\mathbf{N}\in\mathbb{C}^{N\times 10}}\Bigr)
+    = \sum_{k=1}^m n(\gamma;a_k)\oint(f;a_k) \,.
+$$
 </main>
 
 

@@ -7,3 +7,7 @@ p.noIndent {
   margin-bottom: 0px;
   margin-top: 0px;
 }
+
+.MathJax {
+    font-size: 22px !important;
+}

@@ -10,12 +10,14 @@
 			<title> {{ .Site.Title }} </title>
 		{{ end }}
 
-		<!--<link rel="stylesheet" href="{{ "css/main.css" | relURL }}" />
-		<link rel="stylesheet" href="{{ "css/fonts.css" | relURL }}" />-->
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/fonts.css">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/style.css">
 		<link rel="stylesheet" href="{{ .Site.BaseURL }}/css/tertStyles.css">
-		{{ partial "math.html" . }}
+
+        {{ if .Param "math" }}
+          {{ partial "math.html" . }}
+        {{ end }}
+        <!--{{ partial "math.html" . }}-->
 	</head>
 
 	<body>
