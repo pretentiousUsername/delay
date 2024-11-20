@@ -13,31 +13,37 @@
 		<link rel="stylesheet" href="//localhost:1313//css/style.css">
 		<link rel="stylesheet" href="//localhost:1313//css/tertStyles.css">
 		
-<script type="text/x-mathjax-config">
-
-/*MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});*/
-MathJax = {
+<script type="text/javascript">
+  MathJax = {
+      loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
     tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-};
+        packages: {'[+]': {'textmacros'}},
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+    },
+  };
 </script>
 
 
 
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+
+
+
+
+
+    
+
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.7/tex-mml-chtml-mathjax-stix2.js" integrity="sha256-BJoJ1Oj7MVe0W0bQQ2KjLJ42xUp0CnzCGPskF1PKQ5o=" crossorigin="anonymous" charset="UTF-8"></script>
+
+
+
+
+
+
+
+
+
 
 
 <script type="text/x-mathjax-config">

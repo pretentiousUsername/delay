@@ -13,31 +13,37 @@
 		<link rel="stylesheet" href="//localhost:1313//css/style.css">
 		<link rel="stylesheet" href="//localhost:1313//css/tertStyles.css">
 		
-<script type="text/x-mathjax-config">
-
-/*MathJax.Hub.Config({
-  tex2jax: {
-    inlineMath: [['$','$']],
-    displayMath: [['$$','$$']],
-    processEscapes: true,
-    processEnvironments: true,
-    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
-    TeX: { equationNumbers: { autoNumber: "AMS" },
-         extensions: ["AMSmath.js", "AMSsymbols.js"] }
-  }
-});*/
-MathJax = {
+<script type="text/javascript">
+  MathJax = {
+      loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
     tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-    }
-};
+        packages: {'[+]': {'textmacros'}},
+        displayMath: [['$$', '$$'], ['\\[', '\\]']],
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+    },
+  };
 </script>
 
 
 
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
+
+
+
+
+
+    
+
+
+<script async src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.7/tex-mml-chtml-mathjax-stix2.js" integrity="sha256-BJoJ1Oj7MVe0W0bQQ2KjLJ42xUp0CnzCGPskF1PKQ5o=" crossorigin="anonymous" charset="UTF-8"></script>
+
+
+
+
+
+
+
+
+
 
 
 <script type="text/x-mathjax-config">
@@ -104,39 +110,39 @@ MathJax = {
 <h2 id="tables">Tables</h2>
 <p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports them out-of-the-box.</p>
 <table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Age</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Bob</td>
-<td>27</td>
-</tr>
-<tr>
-<td>Alice</td>
-<td>23</td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Bob</td>
+          <td>27</td>
+      </tr>
+      <tr>
+          <td>Alice</td>
+          <td>23</td>
+      </tr>
+  </tbody>
 </table>
 <h4 id="inline-markdown-within-tables">Inline Markdown within tables</h4>
 <table>
-<thead>
-<tr>
-<th>Italics</th>
-<th>Bold</th>
-<th>Code</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><em>italics</em></td>
-<td><strong>bold</strong></td>
-<td><code>code</code></td>
-</tr>
-</tbody>
+  <thead>
+      <tr>
+          <th>Italics</th>
+          <th>Bold</th>
+          <th>Code</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><em>italics</em></td>
+          <td><strong>bold</strong></td>
+          <td><code>code</code></td>
+      </tr>
+  </tbody>
 </table>
 <h2 id="code-blocks">Code Blocks</h2>
 <h4 id="inline-code">Inline Code</h4>
