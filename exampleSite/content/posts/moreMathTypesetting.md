@@ -5,38 +5,34 @@ author: Ian Mitchell
 tags: ["math", "physics", "typesetting"]
 ---
 
+For some reason, new paragraphs are started after a display equation, even when
+I don't want them to. That's ok for now. Anyways, what's \(\abs{x + 1}\)? Here's
+a fun fact, \(\comm{x}{p} = -i \, \hbar\), and that \(\innerprod{j}{k} = \delta_{j k}\).
+
 Here's some math typesetting stuff. For starters I'll just write down the
 Linblad equation, a nice bit of physics for open quantum systems,
-$$ \frac{\partial \rho(t)}{\partial t} =
-\sum_j \gamma_j \left( L_j \, \rho(t) \, L_j^\dagger
--\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
--\lbrack H, \rho(t) \rbrack ~ .$$
+$$\diffp{\rho}{t} = \sum_j \gamma_j \left( L_j \, \rho(t) \, L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right) -\lbrack H, \rho(t) \rbrack \,.$$
 
-Hello \(x\).
+Hello \(x\). This is my fun Skibbidi test.
+For some reason certain things I do just make paragraphs disappear. Why is the
+web like this? Do you know what it takes to make me miss the strength and
+certainty of *TeX*?
 
-Does \(v = \nu a\)? How do \(g\), \(u\), \(v\) and *v*, \(w\), and \(z\) look? This is
+Does \(v = \nu\)? How do \(g\), \(u\), \(v\) and *v*, \(w\), and \(z\) look? This is
 slightly unrelated to the Lindblad equation, since it's classical, but I'm the
 God of this document, so I'll also write down the Boltzmann equation,
-$$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}}
-\cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f}
-{\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} 
-\right)_{\text{coll}} ~ . $$
-
+$$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} \,.$$ <!--For some reason this *one* comma doesn't work, and you need to use two escape sequences.-->
+Help OH YEAH THAT'S WORKING BABYEEEEE YES YES SKIBBIDI BIDEN RIZZ
 
 What about some *even more* fun stuff with Green's functions?---possibly from
 *Quantum Kinetics in Transport and Optics of Semiconductors* by Haug and
 Jauho?
-$$
-G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime ) \,
-G^>(x, t; x^\prime, t^\prime ) +
-\theta(t^\prime - t) \, G^<(x, t; x^\prime, t^\prime ) ~ . $$
-$$
-A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .
-$$
+$$G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime ) \,
+G^>(x, t; x^\prime, t^\prime ) + \theta(t^\prime - t) \, G^<(x, t; x^\prime, t^\prime ) ~ . $$
+$$A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .$$
 Maybe there's an equation we can use from Freerick's *Transport in Multilayer
-Nanostructures*?
-$$
-G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
+Nanostructures*? <!--Somehow, for some reason, the formatting gets destroyed by that goldmark extension. Is that extension really worth it?-->
+$$G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
 d\omega^\prime ~ . $$
 $$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau)\, \langle \lbrack
 \hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack \, c_i(0) \rangle +

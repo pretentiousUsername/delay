@@ -11,3 +11,7 @@ p.noIndent {
 .MathJax {
     font-size: 22px !important;
 }
+
+.MathJax_Display {
+  text-align: left !important;
+}

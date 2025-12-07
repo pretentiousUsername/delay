@@ -20,8 +20,13 @@ p {
   font-size: 22px;
   margin-bottom: 0px;
   margin-top: 0px;
+  /*display: inline;*/
+  /*display: flex;*/ /*There might be a happy accident there for something more avant-garde.*/
 }
 
+.tail {
+  white-space: nowrap;  
+}
 
 figcaption {
   font-family: "Inter", "StixTwo", Times New Roman, serif;

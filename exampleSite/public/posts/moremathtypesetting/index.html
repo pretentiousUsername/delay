@@ -15,23 +15,45 @@
         
           
 
+
+
 <script type="text/javascript">
-  MathJax = {
-      loader: {load: ['[tex]/textmacros', '[tex]/bbox']},
-    tex: {
-        packages: {'[+]': {'textmacros'}},
-        displayMath: [['$$', '$$'], ['\\[', '\\]']],
-        inlineMath: [['$', '$'], ['\(', '\)']],
-    },
-  };
+    MathJax = {
+        output: {
+            font: "mathjax-stix2",
+            displayAlign: "left",
+        },
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]],
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        tex: {
+            macros: {
+                RR: "\\mathbb{R}",
+                dl: ["\, d^{#1} #2", 2, ''],
+                diff: ["\\frac{d^{#1} #2}{d #3^#1}", 3, "{}"],
+                diffp: ["\\frac{\\partial{#1} #2}{\\partial #3^#1}", 3, "{}"],
+                abs: ["\\left| #1 \\right|", 1],
+                expval: ["\\left< #1 \\right>", 1],
+                comm: ["{\\left[ #1 , #2 \\right]}", 2],   
+                acomm: ["\\left\\{ #1, #2 \\right\\}", 2], 
+                bra: ["\\left< #1 \\right|", 1],
+                ket: ["\\left| #1 \\right>", 1],
+                innerprod: ["\\left< #1 \\right| \\left.\\! #2 \\right>", 2],
+            }
+        }
+    };
 </script>
+
+
+
+
+
+
 
 
 <script async
-    src="https://cdn.jsdelivr.net/npm/mathjax-stix2-font@4.0.0-beta.7/tex-mml-chtml-mathjax-stix2.js"
-    integrity="sha256-BJoJ1Oj7MVe0W0bQQ2KjLJ42xUp0CnzCGPskF1PKQ5o="
-    crossorigin="anonymous"
-    charset="UTF-8">
+    src="https://cdn.jsdelivr.net/npm/mathjax@4.0.0/tex-mml-svg.js"
+    integrity="sha256-yVSguK9NbzwqfhIHnfmV4dHlAqcXqAbwWvfe9lsAUfk="
+    crossorigin="anonymous">
 </script>
 
 
@@ -39,6 +61,17 @@
 
 
 
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
 
         
         
@@ -67,36 +100,37 @@
 </div>
 
 <main>
-	<p>Here&rsquo;s some math typesetting stuff. For starters I&rsquo;ll just write down the
+	<p>For some reason, new paragraphs are started after a display equation, even when
+I don&rsquo;t want them to. That&rsquo;s ok for now. Anyways, what&rsquo;s \(\abs{x + 1}\)? Here&rsquo;s
+a fun fact, \(\comm{x}{p} = -i \, \hbar\), and that \(\innerprod{j}{k} = \delta_{j k}\).</p>
+<p>Here&rsquo;s some math typesetting stuff. For starters I&rsquo;ll just write down the
 Linblad equation, a nice bit of physics for open quantum systems,
 </p>
-$$ \frac{\partial \rho(t)}{\partial t} =
-\sum_j \gamma_j \left( L_j \, \rho(t) \, L_j^\dagger
--\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right)
--\lbrack H, \rho(t) \rbrack ~ .$$<p>Hello \(x\).</p>
-<p>Does \(v = \nu a\)? How do \(g\), \(u\), \(v\) and <em>v</em>, \(w\), and \(z\) look? This is
+$$\diffp{\rho}{t} = \sum_j \gamma_j \left( L_j \, \rho(t) \, L_j^\dagger -\frac{1}{2} \lbrace L_j^\dagger L_j, \rho(t)\rbrace\right) -\lbrack H, \rho(t) \rbrack \,.$$<p>Hello \(x\). This is my fun Skibbidi test.
+For some reason certain things I do just make paragraphs disappear. Why is the
+web like this? Do you know what it takes to make me miss the strength and
+certainty of <em>TeX</em>?</p>
+<p>Does \(v = \nu\)? How do \(g\), \(u\), \(v\) and <em>v</em>, \(w\), and \(z\) look? This is
 slightly unrelated to the Lindblad equation, since it&rsquo;s classical, but I&rsquo;m the
 God of this document, so I&rsquo;ll also write down the Boltzmann equation,
 </p>
-$$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}}
-\cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f}
-{\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} 
-\right)_{\text{coll}} ~ . $$<p>What about some <em>even more</em> fun stuff with Green&rsquo;s functions?&mdash;possibly from
+$$\frac{\partial f}{\partial t} + \frac{\partial H}{\partial\mathbf{p}} \cdot \nabla f + \frac{\partial H}{\partial\mathbf{r}} \cdot \frac{\partial f} {\partial\mathbf{p}} = \left( \frac{\partial f}{\partial t} \right)_{\text{coll}} \,.$$<p> 
+Help OH YEAH THAT&rsquo;S WORKING BABYEEEEE YES YES SKIBBIDI BIDEN RIZZ</p>
+<p>What about some <em>even more</em> fun stuff with Green&rsquo;s functions?&mdash;possibly from
 <em>Quantum Kinetics in Transport and Optics of Semiconductors</em> by Haug and
 Jauho?
 </p>
-$$
-G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime ) \,
-G^>(x, t; x^\prime, t^\prime ) +
-\theta(t^\prime - t) \, G^<(x, t; x^\prime, t^\prime ) ~ . $$$$
-A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .
-$$<p>
-Maybe there&rsquo;s an equation we can use from Freerick&rsquo;s <em>Transport in Multilayer
-Nanostructures</em>?
+$$G(x, t; x^\prime, t^\prime ) = \theta(t - t^\prime ) \,
+G^>(x, t; x^\prime, t^\prime ) + \theta(t^\prime - t) \, G^<(x, t; x^\prime, t^\prime ) ~ . $$<p>
 </p>
-$$
-G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
-d\omega^\prime ~ . $$$$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau)\, \langle \lbrack
+$$A(k, \omega) = i \lbrack G^> (k, \omega) - G^< (k, \omega) \rbrack ~ .$$<p>
+Maybe there&rsquo;s an equation we can use from Freerick&rsquo;s <em>Transport in Multilayer
+Nanostructures</em>? 
+</p>
+$$G_{ii} (z) = \int \frac{A_{ii}(\omega^\prime)}{z - \omega^\prime} ~
+d\omega^\prime ~ . $$<p>
+</p>
+$$ \frac{\partial G_{i j}}{\partial \tau} = -\theta(\tau)\, \langle \lbrack
 \hat{\mathcal{H}} - \mu N, c_i(\tau)\rbrack \, c_i(0) \rangle +
 \langle c_j(0) \, \lbrack \hat{\mathcal{H}} - \mu N, c_i(\tau) \rbrack \rangle ~.
 $$<h2 id="the-latex-companion-gauntlet">The <em>LaTeX Companion</em> gauntlet</h2>

@@ -1,6 +1,6 @@
 baseURL = "/"
 theme = "delay"
-paginate = 5
+pagination.pagerSize = 5
 languageCode = "en-us"
 
 themesdir = "../.."
@@ -13,7 +13,7 @@ themesdir = "../.."
         enable = true
         [markup.goldmark.extensions.passthrough.delimiters]
           block = [['\[', '\]'], ['$$', '$$']]
-          inline = [['\(', '\)'], ['$', '$']]
+          inline = [['\(', '\)']]
 
 [author]
     homepage = "asdf"
